@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GifTastic</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- Jumbotron Title -->
+<div class="content">
+    <div class="jumbotron bg-black">
+        <div class="container">
+            <h1 class="text-center">GifTastic <br>
+                <small>Powered by <img src="assets/images/giphylogoblacktext.png"></small>
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-lg-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-black">
+                        <h3 class="panel-title">Topics</h3>
+                    </div>
+                    <div id="btn-list" class="panel-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-black">
+                        <h3 class="panel-title">Add a new topic</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="topic-form">
+                            <div class="input-group">
+                                <input id="new-topic" class="form-control" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default btn-new-topic-clear" type="submit">
+                                        <i class="glyphicon glyphicon-remove"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="new-topic-message"></div>
+                            <input type="button" value="Submit" class="btn btn-submit btn-submit-new-topic">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 ">
+                <div class="panel panel-default">
+                    <div class="panel-heading bg-black">
+                        <h3 class="panel-title">GIFs</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="pager">
+                        </div>
+                        <div id="gifs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer ">
+    <div class="container ">
+        <p>&copy; Copyright 2017 Melanie Heins</p>
+    </div>
+</footer>
+<script type="text/javascript " src="assets/javascript/app.js "></script>
+
+</body>
+
+</html>
