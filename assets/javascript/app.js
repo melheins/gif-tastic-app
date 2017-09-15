@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     function gifSearch() {
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topicName + "&api_key=" + apiKey + "&limit=" + searchLimit + "&offset=" + offset + "";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topicName + "&api_key=" + apiKey + "&limit=" + searchLimit + "&offset=" + offset + "";
 
         console.log(topicName);
         $.ajax({
